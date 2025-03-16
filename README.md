@@ -1,6 +1,10 @@
-Description: Create a task management application where users can create, read, update, and delete tasks. Users should be able to categorize tasks, set deadlines, and mark tasks as complete or incomplete.
+Blog Platform (handles the backend flow for blog application)
 
+Description: Develop a blogging platform where users can write, edit, and delete blog posts. Other users can read and comment on blog posts. Implement user roles, such as admins and regular users.
 
 Features:
     • User registration and login
-    • CRUD operations for tasks
+    • CRUD operations for blog posts
+    • Comment system for blog posts
+    • User roles and permissions
+
