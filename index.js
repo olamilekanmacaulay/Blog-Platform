@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
 const dotenv = require("dotenv");
 const userRoute = require("./Routes/user.route");
-const blogRoute = require("./Routes/blog.route");
+const postRoute = require("./Routes/post.route");
 const commentRoute = require('./Routes/comment.route');
 
 
@@ -23,11 +23,11 @@ mongoose
         console.log("Connected to database");
     })
     .catch((err) => {
-        console.log("Something went wrong");
+        console.error("Database  connection error:", err.message);
     });
 
 app.use(userRoute);
-app.use(blogRoute);
+app.use(postRoute);
 app.use(commentRoute);
 
 app.listen(PORT, () => {
